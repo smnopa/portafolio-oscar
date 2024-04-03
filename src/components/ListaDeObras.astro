@@ -1,0 +1,16 @@
+---
+import ObrasItem from "./ObrasItem.astro";
+import { obras } from '../data/obras'
+---
+
+<ul class="mt-4 mb-4 grid grid-cols-2 md:grid-cols-3 gap-3 px-4">
+    {
+      obras.map(({ id, img }) => {
+        return (
+          <li>
+            <ObrasItem id={id} img={img} />
+          </li>
+        )
+      })
+    }
+  </ul>
