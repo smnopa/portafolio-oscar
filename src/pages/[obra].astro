@@ -11,12 +11,11 @@ if (!info) {
 ---
 
 <Layout title={`${info.id}`}>
-    <div class="grid grid-cols-1 md:grid-cols-[350px_1fr] gap-x-12 mt-4 md:mt-20 px-8">
-
+    <div class="grid grid-cols-1 md:grid-cols-[350px_1fr] gap-x-12 mt-4 md:mt-20 px-8  bg-red-500 justify-center">
       <div class="flex flex-col mb-10">
         <picture class="mb-8 w-full relative">
           <img
-            class="aspect-[389/500] h-full object-cover w-full max-w-full rounded"
+            class="flex h-full object-cover w-full max-w-full rounded"
             src={info.img}
             alt={`${info.id}`}
             style={`view-transition-name: obra-${info.id}`}

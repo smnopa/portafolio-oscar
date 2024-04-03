@@ -1,13 +1,79 @@
 ---
 import { Image } from 'astro:assets';
 ---
-<nav class="flex justify-between md:justify-around items-center text-black bg-red-50 ">
-    <a href="/"><img src="/img/logo.png" class="w-[182px]" alt="Logo" /></a>
-    <ul class="inline-flex gap-4 ">
-      <li><a href="/sobremi" class="text-lg font-bold  hover:text-[#FF5C00] ">Sobre mí</a></li>
-      <li><a href="/obra" class="text-lg font-bold  hover:text-[#FF5C00] ">Obras</a></li>
-      <li><a href="/talleres" class="text-lg font-bold hover:text-[#FF5C00] ">Talleres</a></li>
-      <li><a href="/prensa" class="text-lg font-bold hover:text-[#FF5C00] ">Prensa</a></li>
-      <li><a href="/contacto" class="text-lg font-bold hover:text-[#FF5C00] ">Contacto</a></li>
-    </ul>
-  </nav>
+<style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+
+<nav class="lg:px-16 px-6 bg-white shadow-md flex flex-wrap items-center lg:py-0 py-2">
+  <div class="flex-1 flex justify-between items-center">
+    <a href="/" class="flex text-lg font-semibold">
+      <img
+        src="/img/logo.png"
+        width="182"
+        alt="Logo"
+      />
+    </a>
+  </div>
+  <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+    <svg
+      class="fill-current text-gray-900"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+    >
+      <title>menu</title>
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+    </svg>
+  </label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0">
+        <li class="py-2 lg:py-0 ">
+          <a
+            class="font-bold hover:text-[#FF5C00]"
+            href="/sobremi"
+          >
+            Sobre mí
+          </a>
+        </li>
+        <li class="py-2 lg:py-0 ">
+          <a
+            class="font-bold hover:text-[#FF5C00]"
+            href="/obra"
+          >
+            Obras
+          </a>
+        </li>
+        <li class="py-2 lg:py-0 ">
+          <a
+            class="font-bold hover:text-[#FF5C00]"
+            href="/talleres"
+          >
+            Talleres
+          </a>
+        </li>
+        <li class="py-2 lg:py-0 ">
+          <a
+            class="font-bold hover:text-[#FF5C00]"
+            href="/prensa"
+          >
+            Prensa
+          </a>
+        </li>
+        <li class="py-2 lg:py-0 ">
+          <a
+            class="font-bold hover:text-[#FF5C00]"
+            href="/contacto"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
