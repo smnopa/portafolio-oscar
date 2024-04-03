@@ -8,6 +8,8 @@ const {
   id,
   img
 } = Astro.props
+
+import { Image } from 'astro:assets';
 ---
 
 <a class="hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-2xl" href={`/${id}`}>

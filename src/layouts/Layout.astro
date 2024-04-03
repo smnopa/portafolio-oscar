@@ -3,33 +3,43 @@ import '@fontsource/abhaya-libre';
 import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 interface Props {
-	title: string;
+    title: string;
 }
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body>
-		<Header />
-		<main class="m-auto max-w-6xl bg-red-200">
-			<slot />
-		</main>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body class="disable-scroll">
+        <Header />
+        <main class="m-auto max-w-6xl">
+            <slot />
+        </main>
+    </body>
 </html>
 <style>
-	html {
-		font-family: 'Abhaya Libre', serif;
-		background: #DBDBDB;
-		background-size: 224px;
-	}
+    html {
+        font-family: 'Abhaya Libre', serif;
+        background: #DBDBDB;
+        background-size: 224px;
+    }
+	body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+body {
+    scrollbar-width: none;
+}
 </style>

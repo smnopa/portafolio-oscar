@@ -2,7 +2,7 @@ export const obras = [
 	//----------------------Complexiones heredadas----------------------------
 	{
 		id: 'Complexiones-heredadas-1',
-		img: '../obras/Cuadro1.jpg',
+		img: '/obras/Cuadro1.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '80x70 cm',
 		serie: 'Complexiones heredadas',
@@ -10,7 +10,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-2',
-		img: '../obras/Cuadro2.jpg',
+		img: '/obras/Cuadro2.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '100x70 cm',
 		serie: 'Complexiones heredadas',
@@ -18,7 +18,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-3',
-		img: '../obras/Cuadro3.jpg',
+		img: '/obras/Cuadro3.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '120x80 cm',
 		serie: 'Complexiones heredadas',
@@ -26,7 +26,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-4',
-		img: '../obras/Cuadro4.jpg',
+		img: '/obras/Cuadro4.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '120x80 cm',
 		serie: 'Complexiones heredadas',
@@ -34,7 +34,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-5',
-		img: '../obras/Cuadro5.jpg',
+		img: '/obras/Cuadro5.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '80x70 cm',
 		serie: 'Complexiones heredadas',
@@ -42,7 +42,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-6',
-		img: '../obras/Cuadro6.jpg',
+		img: '/obras/Cuadro6.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '70x60 cm',
 		serie: 'Complexiones heredadas',
@@ -50,7 +50,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-7',
-		img: '../obras/Cuadro8.jpg',
+		img: '/obras/Cuadro8.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '140x100 cm',
 		serie: 'Complexiones heredadas',
@@ -58,7 +58,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-8',
-		img: '../obras/Cuadro9.jpg',
+		img: '/obras/Cuadro9.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Complexiones heredadas',
@@ -66,7 +66,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-9',
-		img: '../obras/Cuadro10.jpg',
+		img: '/obras/Cuadro10.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '70x60 cm',
 		serie: 'Complexiones heredadas',
@@ -74,7 +74,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-10',
-		img: '../obras/Cuadro11.jpg',
+		img: '/obras/Cuadro11.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '70x60 cm',
 		serie: 'Complexiones heredadas',
@@ -82,7 +82,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-11',
-		img: '../obras/Cuadro12.jpg',
+		img: '/obras/Cuadro12.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '70x60 cm',
 		serie: 'Complexiones heredadas',
@@ -90,7 +90,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-12',
-		img: '../obras/Cuadro13.jpg',
+		img: '/obras/Cuadro13.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '80x70cm',
 		serie: 'Complexiones heredadas',
@@ -98,7 +98,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-13',
-		img: '../obras/Cuadro21.jpg',
+		img: '/obras/Cuadro21.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '40x30 cm',
 		serie: 'Complexiones heredadas',
@@ -106,7 +106,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-14',
-		img: '../obras/Cuadro22.jpg',
+		img: '/obras/Cuadro22.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '70x60 cm',
 		serie: 'Complexiones heredadas',
@@ -114,7 +114,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-15',
-		img: '../obras/Cuadro23.jpg',
+		img: '/obras/Cuadro23.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Complexiones heredadas',
@@ -122,7 +122,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-16',
-		img: '../obras/Cuadro24.jpg',
+		img: '/obras/Cuadro24.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Complexiones heredadas',
@@ -130,7 +130,7 @@ export const obras = [
 	},
 	{
 		id: 'Complexiones-heredadas-17',
-		img: '../obras/Cuadro25.jpg',
+		img: '/obras/Cuadro25.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Complexiones heredadas',
@@ -139,7 +139,7 @@ export const obras = [
 	//----------------------Confinados----------------------------
 	{
 		id: 'Confinados-1',
-		img: '../obras/Cuadro15.jpg',
+		img: '/obras/Cuadro15.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -147,7 +147,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-2',
-		img: '../obras/Cuadro16.jpg',
+		img: '/obras/Cuadro16.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -155,7 +155,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-3',
-		img: '../obras/Cuadro17.jpg',
+		img: '/obras/Cuadro17.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -163,7 +163,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-4',
-		img: '../obras/Cuadro18.jpg',
+		img: '/obras/Cuadro18.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -171,7 +171,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-5',
-		img: '../obras/Cuadro19.jpg',
+		img: '/obras/Cuadro19.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -179,7 +179,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-6',
-		img: '../obras/Cuadro20.jpg',
+		img: '/obras/Cuadro20.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -187,7 +187,7 @@ export const obras = [
 	},
 	{
 		id: 'Confinados-7',
-		img: '../obras/Cuadro26.jpg',
+		img: '/obras/Cuadro26.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Confinados',
@@ -196,7 +196,7 @@ export const obras = [
 	//----------------------Cargas----------------------------
 	{
 		id: 'Cargas-1',
-		img: '../obras/Cuadro27.jpg',
+		img: '/obras/Cuadro27.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Cargas',
@@ -204,7 +204,7 @@ export const obras = [
 	},
 	{
 		id: 'Cargas-2',
-		img: '../obras/Cuadro28.jpg',
+		img: '/obras/Cuadro28.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '',
 		serie: 'Cargas',
@@ -213,7 +213,7 @@ export const obras = [
 	//----------------------Obras premiadas----------------------------
 	{
 		id: 'Obras-premiadas-1',
-		img: '../obras/Cuadro7.jpg',
+		img: '/obras/Cuadro7.jpg',
 		tecnica: 'oleo sobre lienzo',
 		formato: '120x80 cm',
 		serie: 'Obras premiadas',
@@ -221,7 +221,7 @@ export const obras = [
 	},
 	{
 		id: 'Obras-premiadas-2',
-		img: '../obras/Cuadro14.jpg',
+		img: '/obras/Cuadro14.jpg',
 		tecnica: 'oleo sobre papel',
 		formato: '21x29.7 cm',
 		serie: 'Obras premiadas',
