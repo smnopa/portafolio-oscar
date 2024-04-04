@@ -11,11 +11,11 @@ if (!info) {
 ---
 
 <Layout title={`${info.id}`}>
-    <div class="grid grid-cols-1 md:grid-cols-[350px_1fr] gap-x-12 mt-4 md:mt-20 px-8  bg-red-500 justify-center">
-      <div class="flex flex-col mb-10">
-        <picture class="mb-8 w-full relative">
+    <main class="m-auto max-w-6xl px-5 py-3">
+      <div class="mb-10">
+        <picture class="flex justify-center mt-4 mb-4">
           <img
-            class="flex h-full object-cover w-full max-w-full rounded"
+            class="flex h-full object-cover w-full max-w-[680px] rounded"
             src={info.img}
             alt={`${info.id}`}
             style={`view-transition-name: obra-${info.id}`}
@@ -23,11 +23,11 @@ if (!info) {
         </picture>
 
       <aside class="mt-10 md:mt-0">
-        <p class="text-lg mb-4">{info.tecnica}</p>
-        <p class="text-lg mb-4">{info.formato}</p>
-        <p class="text-lg mb-4">Serie: {info.serie}</p>
-        <p class="text-lg mb-4">Año: {info.año}</p>
+        <p class="mb-2 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black">De la serie {info.serie}</p>
+        <p class="mb-2 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black">{info.tecnica}</p>
+        <p class="mb-2 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black">{info.formato}</p>
+        <p class="mb-2 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black">{info.año}</p>
       </aside>
     </div>
-  </div>  
+  </main>  
 </Layout>
