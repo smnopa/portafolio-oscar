@@ -18,6 +18,7 @@ La página web del artista está construida utilizando las siguientes tecnologí
 
 - [Astro](https://astro.build/): Un framework moderno para la creación de sitios web estáticos y dinámicos.
 - [Tailwind CSS](https://tailwindcss.com/): Un framework de CSS utilitario para diseñar rápidamente interfaces de usuario.
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript): Se utilizó JavaScript para agregar interactividad y funcionalidades dinámicas a la página web del artista.
 
 ## Cómo Contribuir
 
