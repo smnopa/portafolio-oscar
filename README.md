@@ -1,54 +1,35 @@
-# Astro Starter Kit: Basics
+# Página web del Artista Oscar Bautista Cobos.
 
-```sh
-npm create astro@latest -- --template basics
-```
+<img src="./public/preview.png" alt="BACO" width="100%" height="100%" style="border-radius: 1.6rem;" />
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Bienvenido a la página web oficial del artista BACO! Este repositorio contiene el código fuente y los archivos necesarios para desplegar la página web del artista.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Características de la Página Web
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Sobre mí**: Descubre más sobre la vida y obra del artista, incluyendo su biografía, inspiraciones y filosofía artística.
+- **Obras**: Explora una selección de las obras más destacadas de BACO, con galerías de imágenes y descripciones detalladas de cada pieza.
+- **Talleres**: Mantente informado sobre los próximos talleres y clases, así como la información relevante sobre inscripciones y fechas.
+- **Prensa**: Accede a artículos, entrevistas y reseñas que han sido publicadas sobre el trabajo de BACO, proporcionando una visión más amplia de su impacto en la comunidad artística.
+- **Contacto**: ¿Interesado en adquirir una obra, programar una exhibición, o simplemente saludar a BACO? Encuentra aquí cómo ponerte en contacto.
 
-## 🚀 Project Structure
+## Tecnologías Utilizadas
 
-Inside of your Astro project, you'll see the following folders and files:
+La página web del artista está construida utilizando las siguientes tecnologías:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- [Astro](https://astro.build/): Un framework moderno para la creación de sitios web estáticos y dinámicos.
+- [Tailwind CSS](https://tailwindcss.com/): Un framework de CSS utilitario para diseñar rápidamente interfaces de usuario.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Cómo Contribuir
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+¡Nos encantaría recibir contribuciones para mejorar la página web del artista! Si tienes alguna sugerencia de características nuevas, cambios en el diseño, corrección de errores, o cualquier otra mejora, no dudes en enviar una solicitud de extracción.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Despliegue
 
-## 🧞 Commands
+Puedes desplegar esta página web en tu propio servidor o utilizar servicios de hosting como GitHub Pages, Netlify, o cualquier otro de tu preferencia.
 
-All commands are run from the root of the project, from a terminal:
+## Autor
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Este proyecto fue desarrollado por Samuel Bautista Alvarado.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+¡Gracias por visitar la página web del artista BACO! Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.
