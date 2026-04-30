@@ -1,30 +1,87 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="BACO">
-        <main class="m-auto max-w-6xl px-5 py-3">
-                        <h1 class="text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black mt-5">Pintura al óleo para principiantes</h1>
-                        <div class="flex justify-center mt-4 mb-4">
-                                <img class="w-full" src="../img/foto-talleres.jpg" alt="foto taller">
-                        </div>
-                        <p class="text-xl">Adéntrate en las innumerables posibilidades que ofrece la pintura al óleo, un medio que ha cautivado a grandes maestros a lo largo de la historia del arte. 
-                                Esta técnica destaca por su facilidad de uso y su versatilidad para plasmar el entorno. 
-                                ¿Listo para sumergirte en esta forma de arte de clase mundial?</p>
-                        <p class="text-xl mb-3">En este taller, explorarás las múltiples facetas de las técnicas de pintura más adaptables y crearás una obra completa de principio a fin.</p>
-                        <h1 class="text-xl font-bold">¿Qué aprenderás en este taller?</h1>
-                        <p class="text-xl mb-3">En esta emocionante experiencia de aprendizaje, te sumergirás en el fascinante mundo del arte y la pintura, adquiriendo conocimientos y habilidades que te permitirán 
-                                explorar tu creatividad y expresión personal.</p>
-                        <h1 class="text-xl font-bold">¿Cuál es el proyecto de este taller?</h1>
-                        <p class="text-xl mb-3">Durante el taller, te guiaré a través de un proyecto práctico paso a paso. Aprenderás a planificar, desarrollar y completar una obra de arte utilizando la técnica que 
-                                estamos explorando. Desde la preparación del lienzo hasta los toques finales, te enseñaré cómo llevar tu visión artística a la vida.</p>
-                        <h1 class="text-xl font-bold">¿Para quién es este taller?</h1>
-                        <p class="text-xl mb-3">Este taller está diseñado para personas de todos los niveles de habilidad, desde aquellos que nunca han tomado un pincel hasta artistas intermedios que desean mejorar 
-                                sus habilidades. Si tienes pasión por el arte y el deseo de aprender, ¡este taller es para ti!</p>
-                        <h1 class="text-xl font-bold">Requisitos y materiales</h1>
-                        <p class="text-xl mb-3">No necesitas experiencia previa en pintura para participar en este taller, solo una mente abierta y la disposición para sumergirte en el proceso creativo. 
-                                Te proporcionaré una lista detallada de los materiales necesarios para el taller, desde pinturas y pinceles hasta el lienzo y los solventes. Además, 
-                                estaré disponible para responder cualquier pregunta y ofrecerte orientación sobre cómo obtener los materiales adecuados para tu experiencia de aprendizaje óptima. 
-                                ¡Estoy emocionado de embarcarme en este viaje artístico contigo!</p>
-                </main>
+
+<Layout title="Talleres — Oscar Bautista">
+  <main class="m-auto max-w-5xl px-5 py-16">
+
+    <div class="text-center mb-16">
+      <span class="text-[#1A3A6E] uppercase tracking-[0.4em] text-xs block mb-4">Aprende con el maestro</span>
+      <h1 class="display-font text-5xl md:text-6xl font-bold mb-4">Talleres</h1>
+      <div class="w-16 h-px bg-[#1A3A6E] mx-auto"></div>
+    </div>
+
+    <div class="mb-14 overflow-hidden rounded shadow-2xl">
+      <img class="w-full object-cover max-h-[500px]" src="/img/foto-talleres.jpg" alt="Taller de pintura al óleo" />
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      <div class="mb-12">
+        <h2 class="display-font text-3xl font-bold mb-2">Pintura al óleo para principiantes</h2>
+        <div class="w-10 h-px bg-[#1A3A6E] mt-3 mb-6"></div>
+        <p class="text-gray-600 text-lg leading-relaxed mb-4">
+          Adéntrate en las innumerables posibilidades que ofrece la pintura al óleo, un medio que ha cautivado a grandes
+          maestros a lo largo de la historia del arte.
+        </p>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Esta técnica destaca por su facilidad de uso y su versatilidad para plasmar el entorno. En este taller
+          explorarás sus múltiples facetas y crearás una obra completa de principio a fin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+        <div class="bg-white rounded p-7 shadow-sm border-l-2 border-[#1A3A6E]">
+          <h3 class="display-font text-xl font-bold mb-3">¿Qué aprenderás?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Te sumergirás en el fascinante mundo del arte y la pintura, adquiriendo conocimientos y habilidades que
+            te permitirán explorar tu creatividad y expresión personal.
+          </p>
+        </div>
+
+        <div class="bg-white rounded p-7 shadow-sm border-l-2 border-[#1A3A6E]">
+          <h3 class="display-font text-xl font-bold mb-3">¿Cuál es el proyecto?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Te guiaré en un proyecto práctico paso a paso: desde la preparación del lienzo hasta los toques finales,
+            llevarás tu visión artística a la vida.
+          </p>
+        </div>
+
+        <div class="bg-white rounded p-7 shadow-sm border-l-2 border-[#1A3A6E]">
+          <h3 class="display-font text-xl font-bold mb-3">¿Para quién es?</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Para personas de todos los niveles, desde quienes nunca han tomado un pincel hasta artistas intermedios
+            que desean mejorar sus habilidades.
+          </p>
+        </div>
+
+        <div class="bg-white rounded p-7 shadow-sm border-l-2 border-[#1A3A6E]">
+          <h3 class="display-font text-xl font-bold mb-3">Requisitos y materiales</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            No necesitas experiencia previa. Te daré una lista detallada de materiales y estaré disponible para
+            orientarte antes y durante el taller.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="text-center bg-[#1C1C1C] rounded p-10">
+        <p class="display-font text-white text-2xl italic mb-2">"¡Estoy emocionado de embarcarme en este viaje artístico contigo!"</p>
+        <p class="text-[#1A3A6E] text-xs uppercase tracking-widest mt-4">— Oscar Bautista</p>
+        <a
+          href="/contacto"
+          class="inline-block mt-8 border border-[#1A3A6E] text-[#1A3A6E] px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#1A3A6E] hover:text-white transition-all duration-300"
+        >
+          Inscribirme al taller
+        </a>
+      </div>
+
+    </div>
+  </main>
 </Layout>
 
+<style>
+  .display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+</style>

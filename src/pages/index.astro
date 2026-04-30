@@ -2,16 +2,87 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="BACO">
-	<main>
-		<img class="w-full h-full object-cover" src="../img/Imagen-principal-1.jpg" alt="Imagen principal">
-	</main>
+<Layout title="Oscar Bautista — Pintor">
+  <div class="relative overflow-hidden hero-section">
+    <img
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      src="/img/Imagen-principal-1.jpg"
+      alt="Oscar Bautista - Obra de portada"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10"></div>
+
+    <div class="absolute inset-0 flex flex-col items-center justify-end pb-20 md:pb-28 px-6 text-center">
+      <span class="text-[#1A3A6E] uppercase tracking-[0.5em] text-xs md:text-sm font-light mb-5 block">
+        Pintura Figurativa · Colombia
+      </span>
+      <h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-bold leading-none mb-5 drop-shadow-2xl display-font">
+        Oscar Bautista
+      </h1>
+      <div class="w-16 h-px bg-[#1A3A6E] mx-auto mb-6"></div>
+      <p class="text-white/70 text-base md:text-lg font-light mb-12 max-w-sm tracking-wide leading-relaxed">
+        Maestro del arte figurativo originario de Barrancabermeja, Colombia
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <a
+          href="/obra"
+          class="group inline-flex items-center gap-3 bg-[#1A3A6E] text-white px-9 py-3.5 text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-[#1A3A6E] transition-all duration-300 font-semibold"
+        >
+          Ver Obras
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        <a
+          href="/sobremi"
+          class="inline-flex items-center gap-2 border border-white/50 text-white/80 px-9 py-3.5 text-xs uppercase tracking-[0.3em] hover:border-white hover:text-white transition-all duration-300"
+        >
+          Sobre mí
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <svg class="w-5 h-5 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
+
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <div class="group">
+        <div class="w-10 h-px bg-[#1A3A6E] mx-auto mb-6 group-hover:w-16 transition-all duration-300"></div>
+        <h3 class="display-font text-2xl font-bold mb-3">Obra</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Más de 28 pinturas en óleo sobre lienzo organizadas por series temáticas.</p>
+        <a href="/obra" class="inline-block mt-4 text-[#1A3A6E] text-xs uppercase tracking-widest hover:underline">Explorar →</a>
+      </div>
+      <div class="group">
+        <div class="w-10 h-px bg-[#1A3A6E] mx-auto mb-6 group-hover:w-16 transition-all duration-300"></div>
+        <h3 class="display-font text-2xl font-bold mb-3">Talleres</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Aprende pintura al óleo de la mano de un maestro con amplia trayectoria.</p>
+        <a href="/talleres" class="inline-block mt-4 text-[#1A3A6E] text-xs uppercase tracking-widest hover:underline">Ver taller →</a>
+      </div>
+      <div class="group">
+        <div class="w-10 h-px bg-[#1A3A6E] mx-auto mb-6 group-hover:w-16 transition-all duration-300"></div>
+        <h3 class="display-font text-2xl font-bold mb-3">Contacto</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">¿Interesado en una obra o en el taller? Escríbele directamente.</p>
+        <a href="/contacto" class="inline-block mt-4 text-[#1A3A6E] text-xs uppercase tracking-widest hover:underline">Escribir →</a>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-@media (max-width: 768px) {
-img {
-    height: 100vh;
+  .hero-section {
+    height: calc(100vh - 65px);
+    min-height: 500px;
+  }
+  .display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  @media (max-width: 768px) {
+    .hero-section {
+      height: calc(100vh - 56px);
     }
-}
+  }
 </style>

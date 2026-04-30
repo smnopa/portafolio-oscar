@@ -1,12 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ListaDeObras from '../components/ListaDeObras.astro';
-import { Image } from 'astro:assets';
 ---
 
-
-<Layout title="BACO">
-	<main class="m-auto max-w-6xl px-5 py-3">
-		<ListaDeObras />
-	</main>	
+<Layout title="Obras — Oscar Bautista">
+  <main class="m-auto max-w-6xl px-5 py-12">
+    <div class="text-center mb-14">
+      <span class="text-[#1A3A6E] uppercase tracking-[0.4em] text-xs block mb-4">Portafolio</span>
+      <h1 class="display-font text-5xl md:text-6xl font-bold mb-4">Obras</h1>
+      <div class="w-16 h-px bg-[#1A3A6E] mx-auto mb-6"></div>
+      <p class="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
+        Pinturas en óleo sobre lienzo organizadas en series temáticas que exploran la identidad, el cuerpo y el entorno colombiano.
+      </p>
+    </div>
+    <ListaDeObras />
+  </main>
 </Layout>
+
+<style>
+  .display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+</style>

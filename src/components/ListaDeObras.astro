@@ -1,17 +1,38 @@
 ---
 import ObrasItem from "./ObrasItem.astro";
-import { obras } from '../data/obras'
-import { Image } from 'astro:assets';
+import { obras } from '../data/obras';
+
+const seriesMap = new Map<string, typeof obras>();
+obras.forEach(obra => {
+  if (!seriesMap.has(obra.serie)) {
+    seriesMap.set(obra.serie, []);
+  }
+  seriesMap.get(obra.serie)!.push(obra);
+});
 ---
 
-<ul class="mt-4 mb-4 grid grid-cols-2 md:grid-cols-3 gap-3 px-4">
-    {
-      obras.map(({ id, img }) => {
-        return (
+<div class="py-8 px-4">
+  {[...seriesMap.entries()].map(([serie, items]) => (
+    <section class="mb-16">
+      <div class="flex items-center gap-5 mb-8">
+        <div class="w-10 h-px bg-[#1A3A6E] shrink-0"></div>
+        <h2 class="display-font text-2xl md:text-3xl font-bold tracking-wide whitespace-nowrap">{serie}</h2>
+        <div class="flex-1 h-px bg-gray-300"></div>
+        <span class="text-gray-400 text-xs uppercase tracking-widest shrink-0">{items.length} {items.length === 1 ? 'obra' : 'obras'}</span>
+      </div>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        {items.map(({ id, img }) => (
           <li>
             <ObrasItem id={id} img={img} />
           </li>
-        )
-      })
-    }
-  </ul>
+        ))}
+      </ul>
+    </section>
+  ))}
+</div>
+
+<style>
+  .display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+</style>

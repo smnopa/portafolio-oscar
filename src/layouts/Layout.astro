@@ -10,17 +10,20 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Explora un mundo de creatividad y expresión en mi portafolio artístico. Cada obra es una ventana a mi imaginación, donde colores y formas se funden para contar historias únicas. ¡Bienvenido a mi universo artístico!" />
+        <meta name="description" content="Portafolio de Oscar Bautista, pintor figurativo colombiano originario de Barrancabermeja. Explora su obra en óleo sobre lienzo, exposiciones y talleres." />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image" href="../img/icon.png" />
+        <link rel="icon" type="image/png" href="/img/icon.png" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
         <ViewTransitions />
     </head>
-    <body class="disable-scroll">
+    <body>
         <Header />
         <main>
             <slot />
@@ -30,18 +33,18 @@ const { title } = Astro.props;
 </html>
 <style>
     html {
-        font-family: 'Abhaya Libre', serif;
-        background: #DBDBDB;
-        background-size: 224px;
+        font-family: 'Abhaya Libre', Georgia, serif;
+        background: #F5F5F5;
     }
-	body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-    width: 0px;
-}
-body {
-    scrollbar-width: none;
-}
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        color: #1C1C1C;
+    }
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
+    body {
+        scrollbar-width: none;
+    }
 </style>

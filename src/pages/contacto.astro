@@ -2,26 +2,71 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-    <Layout title="BACO">
-        <section class="p-5">
-            <div class="lg:py-12 px-4 mx-auto max-w-screen-md">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-black">Contactame</h2>
-                <p class="mb-8 lg:mb-15 font-light text-center dark:text-black sm:text-xl">¡Aprecio tu visita! Espero que te hayas deleitado tanto con mis obras como yo al crearlas. Si tienes algún comentario, pregunta o simplemente deseas saludar, no dudes en completar el formulario adjunto o enviarme un correo electrónico.</p>
-                <form action="https://formsubmit.co/oscarbautistacobos@gmail.com" method="POST" class="space-y-8">
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Tu correo</label>
-                        <input type="email" name="email" id="email" class="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@hotmail.com" required>
-                    </div>
-                    <div>
-                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Asunto</label>
-                        <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-900 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Dime como puedo ayudarte" required>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Tu mensaje</label>
-                        <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Deja un comentario..."></textarea>
-                    </div>
-                    <button type="submit" value="Enviar" class="py-3 px-5 text-sm font-medium text-center rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 border bg-gray-700 border-gray-600 text-white hover:bg-white hover:text-black">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
-    </Layout>
+<Layout title="Contacto — Oscar Bautista">
+  <main class="py-16 px-5">
+
+    <div class="text-center mb-14">
+      <span class="text-[#1A3A6E] uppercase tracking-[0.4em] text-xs block mb-4">Hablemos</span>
+      <h1 class="display-font text-5xl md:text-6xl font-bold mb-4">Contacto</h1>
+      <div class="w-16 h-px bg-[#1A3A6E] mx-auto mb-6"></div>
+      <p class="text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
+        ¿Interesado en una obra, en los talleres, o simplemente quieres saludar? Escríbele directamente.
+      </p>
+    </div>
+
+    <div class="max-w-xl mx-auto bg-white rounded shadow-sm p-8 md:p-12">
+      <form action="https://formsubmit.co/oscarbautistacobos@gmail.com" method="POST" class="space-y-7">
+
+        <div>
+          <label for="email" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Tu correo</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="nombre@correo.com"
+            required
+            class="w-full border border-gray-200 rounded px-4 py-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#1A3A6E] transition-colors placeholder-gray-300"
+          />
+        </div>
+
+        <div>
+          <label for="subject" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Asunto</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="¿En qué puedo ayudarte?"
+            required
+            class="w-full border border-gray-200 rounded px-4 py-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#1A3A6E] transition-colors placeholder-gray-300"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            placeholder="Escribe tu mensaje aquí..."
+            class="w-full border border-gray-200 rounded px-4 py-3 text-sm text-gray-800 bg-white focus:outline-none focus:border-[#1A3A6E] transition-colors placeholder-gray-300 resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[#1A3A6E] text-white py-3.5 text-xs uppercase tracking-[0.3em] font-semibold hover:bg-[#1C1C1C] transition-colors duration-300 rounded"
+        >
+          Enviar mensaje
+        </button>
+
+      </form>
+    </div>
+
+  </main>
+</Layout>
+
+<style>
+  .display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+</style>

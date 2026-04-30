@@ -1,22 +1,27 @@
 ---
 export interface Props {
-  id: string
-  img: string
+  id: string;
+  img: string;
 }
 
-const {
-  id,
-  img
-} = Astro.props
-
-import { Image } from 'astro:assets';
+const { id, img } = Astro.props;
 ---
 
-<a class="hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-2xl" href={`/${id}`}>
+<a
+  class="group relative inline-block overflow-hidden rounded shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 w-full"
+  href={`/${id}`}
+>
   <img
-    alt={`Obra de la serie ${id}`}
-    class="aspect-[389/500] h-full object-cover w-full max-w-full rounded"
+    alt={`Obra — ${id.replace(/-/g, ' ')}`}
+    class="aspect-[389/500] h-full object-cover w-full max-w-full transition-transform duration-500 group-hover:scale-105"
     src={img}
     style={`view-transition-name: book-${id}`}
+    loading="lazy"
   />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+      <div class="w-6 h-px bg-[#1A3A6E] mb-2"></div>
+      <p class="text-white text-xs uppercase tracking-[0.2em]">Ver obra</p>
+    </div>
+  </div>
 </a>
