@@ -10,6 +10,9 @@
     "astro": "astro",
     "lint": "prettier --check . --write"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
